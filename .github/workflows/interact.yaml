@@ -1,5 +1,5 @@
 
-name: interact with Github API
+name: interact
 on: 
   pull_request:
   workflow_dispatch:
@@ -10,13 +10,13 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
+      #- id: short_sha
+      #  run: |          
+      #    echo "sha_short=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
       - id: short_sha
-        run: |          
-          echo "sha_short=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
-      # - id: short_sha
-      #   run: |
-      #     echo "GITHUB_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV 
-            # USE {{env.GITHUB_SHA}} in next step
+        run: |
+         echo "GITHUB_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV 
+         USE {{env.GITHUB_SHA}} in next step
       - name: Create issue using REST API
         run: |
           curl --request POST \
