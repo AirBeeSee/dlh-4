@@ -1,6 +1,6 @@
 name: npm test one job
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   run-npm-test:
