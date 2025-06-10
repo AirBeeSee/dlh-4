@@ -3,8 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-npm-test:
-    
+  run-npm-test:   
     uses: AirBeeSee/dlh-4/.github/workflows/ex4.yaml@main
     with:
       node-version: 20
