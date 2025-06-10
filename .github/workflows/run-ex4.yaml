@@ -5,6 +5,6 @@ on:
 jobs:
   run-npm-test:
     
-    uses: AirBeeSee/dlh-4/.github/workflows/{ex4.yaml}@main
+    uses: AirBeeSee/dlh-4/.github/workflows/ex4.yaml@main
     with:
       node-version: 20
