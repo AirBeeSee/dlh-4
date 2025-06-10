@@ -1,4 +1,4 @@
-name: run ex4
+name: todelete run ex4
 on:
   workflow_dispatch:
 
