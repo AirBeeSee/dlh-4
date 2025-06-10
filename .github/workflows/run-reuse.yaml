@@ -1,4 +1,4 @@
-name: run reuse from other repo
+name: run-reuse
 on:
   workflow_dispatch:
 
