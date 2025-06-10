@@ -4,6 +4,6 @@ on:
 
 jobs:
   run-npm-test:   
-    uses: AirBeeSee/dlh-4/.github/workflows/ex4.yaml@main
+    uses: AirBeeSee/dlh-call-reuse/blob/main/.github/workflows/reuse.yml@main
     with:
       node-version: 20
