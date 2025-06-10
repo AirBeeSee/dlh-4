@@ -1,4 +1,4 @@
-name: todelete run ex4
+name: run reuse from other repo
 on:
   workflow_dispatch:
 
