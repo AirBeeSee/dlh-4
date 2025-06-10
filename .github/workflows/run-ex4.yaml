@@ -1,4 +1,4 @@
-name: Reusable Workflow
+name: run ex4
 on:
   workflow_dispatch:
 
